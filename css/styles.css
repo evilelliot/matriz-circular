@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto+Mono:wght@200&display=swap');
+*{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+table{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse;
+}
+td{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+.container{
+    width: 30%;
+    margin: auto;
+}
