@@ -1,10 +1,14 @@
 const grid = document.getElementById("grid");
-const n = 20;
-const m = 20;
-let arr = Array(n).fill().map(() => Array(m).fill(0));
+
+const n    = parseInt(localStorage.getItem("n"), 10);
+const m    = parseInt(localStorage.getItem("m"), 10);
+const bc   = localStorage.getItem("baseColor");
+
+let arr    = Array(n).fill().map(() => Array(m).fill(0));
 let currentRow = Math.floor(Math.random() * n);
 let currentCol = Math.floor(Math.random() * m);
 
+console.log(bc);
 // Inicializar el array y tabla
 for (let i = 0; i < n; i++) {
     let row = grid.insertRow();
